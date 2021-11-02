@@ -16,7 +16,7 @@ function FileType(path) {
             let convertedData = CovertBase64ToArrayBuffer(fileData);
             convertedData = new Uint8Array(convertedData);
 
-            let type = fileType(convertedData);
+            let type = fileType.fromBuffer(convertedData);
             if (type === undefined || type === null) {
               let decodedData = String.fromCharCode.apply(null, convertedData);
 
