@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "buffer": "5.0.8",
-    "file-type": "11.1.0",
+    "file-type": "12.4.2",
     "js-base64": "2.3.2"
   },
   "devDependencies": {
