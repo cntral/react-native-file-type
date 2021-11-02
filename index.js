@@ -1,6 +1,6 @@
 import RNFS from "react-native-fs";
 import { Base64 } from "js-base64";
-import fileType from "file-type";
+import { fromBuffer } from "file-type";
 
 function min (a, b) {
   return a < b ? a : b;
@@ -16,7 +16,7 @@ function FileType(path) {
             let convertedData = CovertBase64ToArrayBuffer(fileData);
             convertedData = new Uint8Array(convertedData);
 
-            let type = fileType.fromBuffer(convertedData);
+            let type = fromBuffer(convertedData);
             if (type === undefined || type === null) {
               let decodedData = String.fromCharCode.apply(null, convertedData);
 
