@@ -17,7 +17,7 @@
   "dependencies": {
     "buffer": "5.0.8",
     "file-type": "7.3.0",
-    "js-base64": "2.3.2"
+    "js-base64": "3.7.2"
   },
   "devDependencies": {
     "prettier-pack": "0.0.7"
